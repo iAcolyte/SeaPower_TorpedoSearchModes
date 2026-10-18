@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>TorpedoSearchModes</AssemblyName>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <GamePath>$(MSBuildThisFileDirectory)..\..</GamePath>
+    <Managed>$(GamePath)\Sea Power_Data\Managed</Managed>
+    <OutDir>$(GamePath)\Sea Power_Data\StreamingAssets\TorpedoSearchModes\</OutDir>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Seapower-Scripts"><HintPath>$(Managed)\Seapower-Scripts.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UniRx"><HintPath>$(Managed)\UniRx.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(Managed)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(GamePath)\BepInEx\core\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="AnchorChain"><HintPath>$(GamePath)\..\..\workshop\content\1286220\3380210757\AnchorChain.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>
